@@ -1,0 +1,36 @@
+.upload {
+    background-color: var(--upload-bg-color);
+    border: 2px solid var(--upload-border-color);
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--upload-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+
+    &::after {
+        content: attr(data-text);
+    }
+
+    &:hover {
+        background-color: var(--upload-hover-bg-color);
+        border: 2px solid var(--upload-hover-border-color);
+        color: var(--upload-hover-text-color);
+    }
+
+    &:focus-within {
+        background-color: var(--upload-hover-bg-color);
+        border: 2px solid var(--upload-hover-border-color);
+        color: var(--upload-hover-text-color);
+    }
+}
+
+.upload__icon {
+    margin-right: 10px;
+    height: 20px;
+    width: 18px;
+}

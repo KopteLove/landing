@@ -1,0 +1,86 @@
+$mobil: 460px;
+$tablet: 768px;
+$desktop: 1024px;
+
+:root {
+    //header
+    --burger-bg: #ffffff;
+    --nav-bg-color: #0f0f1c;
+    --nav-bg-color-mobile: rgba(0, 0, 0, 0.3);
+    --header-bg-color: rgba(16, 16, 29, 0.9);
+
+    //content
+    --content-bg-color: #272733;
+    --stages-dot-color: #ffffff;
+    --stages-bg-color: #ffffff;
+    --stages-svg-color: #ffffff;
+    --promo-bg-color: #ffffff;
+
+    //footer
+    --footer-list-text-color: #C3C3C3;
+    --footer-separator-color: #C3C3C3;
+    --footer-bg-color: #3D4050;
+
+    //text
+    --light-text-color: #ffffff;
+    --dark-text-color: #000000;
+    --gray-text-color: #BBBBBB;
+    --hover-text-color: #43ABF0;
+
+    //buttons
+    --btn-action-bg-color: #3E9CDC;
+    --btn-action-border-color: #ffffff;
+    --btn-action-text-color: #ffffff;
+    --btn-second-bg-color: #ffffff;
+    --btn-second-border-color: #6F6D7B;
+    --btn-second-text-color: #2A2B30;
+
+    //input
+    --input-bg-color: rgba(255, 255, 255, 0.85);
+    --input-border-color: #FFFFFF;
+    --input-text-color: #272733;
+    --input-placeholder-color: #272733;
+    --input-hover-bg-color: #FFFFFF;
+    --input-focus-bg-color: #FFFFFF;
+    --input-focus-text-color: #272733;
+
+    //select
+    --select-open-bg-color: rgba(61, 64, 80, 0.85);
+    --select-open-border-color: rgba(61, 64, 80, 0.85);
+    --select-open-text-color: #ffffff;
+    --select-open-arrow-main-color: #ffffff;
+    --select-open-arrow-extra-color: #383b4b;
+    --select-bg-color: rgba(255, 255, 255, 0.85);
+    --select-hover-bg-color: #ffffff;
+    --select-border-color: #FFFFFF;
+    --select-text-color: #272733;
+    --select-dropdown-bg: #272733;
+    --select-dropdown-text: #ffffff;
+    --select-arrow-main-color: #000000;
+    --select-arrow-extra-color: #dfdfe1;
+
+    //scroll
+    --scroll-bg-color: #3D4050;
+
+    //upload
+    --upload-bg-color: #ffffff;
+    --upload-border-color: #3E9CDC;
+    --upload-text-color: #272733;
+    --upload-hover-bg-color: #3E9CDC;
+    --upload-hover-border-color: #ffffff;
+    --upload-hover-text-color: #ffffff;
+
+    //range
+    --range-text-color: #ffffff;
+    --range-thumb-bg-color: #43ABF0;
+    --range-thumb-border-color: #286690;
+    --range-track-border-color: #ffffff;
+    --range-track-bg-color: rgba(255, 255, 255, 0.7);
+
+    //colors
+    --dark-blue-color: #286690;
+    --accent-color: #3E9CDC;
+
+    //footer
+    --footer-icon-color: #3E9CDC;
+}

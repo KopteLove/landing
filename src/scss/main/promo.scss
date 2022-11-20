@@ -1,0 +1,55 @@
+.promo {
+    padding: clamp(100px, 20%, 210px) 0;
+}
+
+.webp .promo {
+    background: var(--promo-bg-color) url('/src/img/bg_promo.webp') no-repeat 50% 0 / cover;
+}
+
+.no-webp .promo {
+    background: var(--promo-bg-color) url('/src/img/bg_promo.jpg') no-repeat 50% 0 / cover;
+}
+
+.promo__header {
+    max-width: 780px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 0 0 clamp(32px, 20%, 80px);
+    word-break: break-word;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 48px;
+        line-height: 58px;
+    }
+}
+
+.promo__title {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.promo__list {
+    margin-bottom: clamp(32px, 10%, 80px);
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.promo__item {
+    &:not(:last-of-type) {
+        margin-bottom: 5px;
+    }
+
+    &::before {
+        content: '-';
+        padding: 0 10px;
+    }
+}
+
+.promo__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 30px;
+}

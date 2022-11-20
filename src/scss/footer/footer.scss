@@ -1,0 +1,116 @@
+.footer {
+    background-color: var(--footer-bg-color);
+    padding: 30px 0;
+}
+
+.footer__content {
+    display: grid;
+    gap: 16px 0;
+    grid-template-areas: 'payments' 'contacts' 'copyright';
+}
+
+.footer__copyright {
+    color: var(--light-text-color);
+    font-size: 13px;
+    margin: 16px 0 0;
+    order: 1;
+    text-align: center;
+}
+
+.footer__list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.footer__item {
+    color: var(--footer-list-text-color);
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.footer__link {
+    color: var(--footer-list-text-color);
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        color: var(--hover-text-color);
+    }
+
+    &:focus {
+        outline: none;
+        text-decoration: underline;
+    }
+}
+
+$names: copyright, payments, contacts;
+
+@each $name in $names {
+    .grid-#{$name} {
+        grid-area: $name;
+    }
+}
+
+.footer__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: var(--footer-icon-color);
+}
+
+@media screen and (min-width: $tablet) {
+    .footer__content {
+        grid-template-areas: 'payments contacts' 'copyright copyright';
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .footer__content {
+        display: flex;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .footer__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-grow: 1;
+
+        &--center {
+            flex-grow: 2.2;
+            position: relative;
+
+            &::after,
+            &::before {
+                content: '';
+                width: 1px;
+                height: 100%;
+                background-color: var(--footer-separator-color);
+                position: absolute;
+            }
+
+            &::before {
+                left: -30px;
+            }
+
+            &::after {
+                right: -30px;
+            }
+        }
+    }
+
+    .footer__copyright {
+        order: 0;
+        white-space: nowrap;
+        text-align: left;
+        flex-grow: 1;
+        margin: 0;
+    }
+}
